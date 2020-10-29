@@ -55,7 +55,7 @@ Name   |   Album | Artist   |   Danceability |   Duration |   Energy | Explicit 
  | Hello  |      25 | Adele    | 0.481 |     295493 |    0.451 | False      | 0 |     0.0872 |     -6.095 |      0 |          0.336 |           73 |        0.0347 | 157.966 | 4 |     0.289 |'
  
 &nbsp;  
-&nbsp;  
+
 Below we analyse only the major, or ionian mode (1), and minor, or aoelian mode (2).
 
 ![Mode_Emotion_Comparison](images/mode_emotion_comparison_with_mean.png)
