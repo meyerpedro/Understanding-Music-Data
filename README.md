@@ -47,6 +47,7 @@ Name     | Artist      |   Decade |   Rank |   danceability |   energy |   key |
  ---:|:---------|:------------|---------:|-------:|---------------:|---------:|------:|-----------:|--------------:|---------------:|-------------------:|-----------:|----------:|--------:|--------------:|-----------------:|:----------
 Hey Jude | The Beatles |       60 |      2 |          0.462 |    0.632 |     5 |     -7.438 |        0.0248 |          0.091 |                  0 |      0.397 |     0.585 |  74.268 |        238854 | 4 | England   | Liverpool |
 
+[![Hey Jude](images/heyjude.jpg)](https://www.youtube.com/watch?v=mQER0A0ej0M)
 
 #### ***Hello - Adele***
 
@@ -54,6 +55,7 @@ Name   |   Album | Artist   |   Danceability |   Duration |   Energy | Explicit 
  -------:|:-------|--------:|:---------|---------------:|-----------:|---------:|:-----------|-------------------:|-----------:|-----------:|-------:|---------------:|-------------:|--------------:|--------:|----------------:
  | Hello  |      25 | Adele    | 0.481 |     295493 |    0.451 | False      | 0 |     0.0872 |     -6.095 |      0 |          0.336 |           73 |        0.0347 | 157.966 | 4 |     0.289 |'
  
+[![Hello](images/hello.png)](https://www.youtube.com/watch?v=_WS9w10ygpU)
 &nbsp;  
 
 Below we analyse only the major, or ionian mode (1), and minor, or aoelian mode (2).
@@ -77,11 +79,14 @@ name | artist | decade | rank | danceability | energy | key |   loudness | speec
 My Sharona | The Knack |       70 |     15 |          0.586 |      0.7 |     0 |     -9.558 |        0.0363 |         0.0589 |            0.00125 |     0.0318 |     0.897 | 147.245 |        295400 |                4 | United States | Los Angeles |
 
 
+[![My Sharona](images/mysharona.jpg)](https://www.youtube.com/watch?v=ZR-3r5Z9kqw)
+
 
 |Name | Album | Artist | Acousticness |  Danceability | Duration |   Energy | Explicit |   Instrumentalness |   Liveness |   Loudness |   Mode | Popularity | Speechiness |   Tempo | TimeSignature |   Valence |
 |-------------:|---------------:|:----------|:-----------|---------------:|-----------:|---------:|:-----------|-------------------:|-----------:|-----------:|-------:|:--------|-------------:|--------------:|--------:|----------------:
 |Gravity|Continuum|John Mayer|0.731|0.764|245827|0.326|False|0.0013|0.24|-9.883|1|76|0.0342|123.98|3|0.237|
 
+[![Gravity](images/gravity.jpg)](https://www.youtube.com/watch?v=_iGOWk-r614)
 &nbsp;  
 ## Acoustic Data in Popular Music
 
