@@ -189,3 +189,7 @@ The stimulus examples were generated with an algorithm using the Director Musice
 **time_signature**	| int |	An estimated overall time signature of a track. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure). 
 
 
+## Citation
+
+[Eerola T, Friberg A and Bresin R (2013) Emotional expression in music: contribution, linearity, and additivity of primary musical cues. Front. Psychol. 4:487. doi: 10.3389/fpsyg.2013.00487](https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00487/full)
+
