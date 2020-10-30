@@ -1,5 +1,9 @@
 
-# Capstone I Proposal - _Pedro Meyer_
+# Understanding Music Data - How to Translate Emotions?
+
+_Capstone I Project_
+
+_by Pedro Meyer_
 
 
 ![Music Quote](https://i.pinimg.com/originals/9d/29/95/9d2995677b34951c7f1088f70c0f1f76.jpg)
@@ -9,11 +13,21 @@
 
 I have been a musician for about 17 years. As a songwriter, it is interesting to me to understand what makes songs successful, unique and popular. There are many parameters that makes a song sound the way it sounds and they are now widely available for researches to look into.
 
-I would like to understand the relationship between these parameters, called acoustic metadata, with our emotions, and how successful songs manipulated those parameters. This project aims to establish a relationship between the acoustic metadata to the way people feel, and how that relates to popular tunes through the decades, form the 60's to the 2000's. 
+As Tom Waits said:
+
+> “…You don’t really go to songwriting school…”
+
+Songwriting is an elusive art. Combining lyrics, rythm and melody is a difficult task but one that gives a lot of tools to help tell a story.
+
+I would like to understand the relationship between the parameters that constitute music, called acoustic metadata, with our emotions and the songwriting process, and how their use changed over the years. This project aims to establish a relationship between the acoustic metadata to the way people feel, and how that relates to popular tunes through the decades, form the 60's to the 2000's. 
 
 ## Data
 
-Harvard has made available the data for a study conducted by Tuomas Eerola in 2016 that aimed to correlate the metadata with emotions. This study can be found [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IFOBRN). This data set had to be concatenated using pandas, since the emotion reading and the cues values came in different files. 
+Frontiers in Psychology published a study from the Department of Music, University of Jyväskylä, Finland and the Department of Speech, Music, and Hearing, KTH - Royal Institute of Technology, Stockholm, Sweden, conducted by Tuomas Eerola in 2016, aimed to correlate the acoustic metadata with emotion expression. This study can be found [here](https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00487/full). This dataset had to be concatenated using pandas, since the emotion reading and the cues values came in different files. 
+
+This study took 46 participants with musical background and exposed them to 200 audio stimuli. Listeners rated the 200 musical examples according to four perceived emotional characters (happy, sad, peaceful, and scary. Each audio example had 6 cues, such as tempo and time signature.
+
+
 
  Nro |   Scary |   Happy |    Sad |   Peaceful |   Register |   Mode |   Tempo |   Soundlevel |   Articulation |   Timbre |   Melody 
  ---:|------:|--------:|--------:|-------:|-----------:|-----------:|-------:|--------:|-------------:|---------------:|---------:
@@ -25,22 +39,31 @@ Harvard has made available the data for a study conducted by Tuomas Eerola in 20
 
 
 
-In order to correlate the significance of emotions and popular music, I have collected data from the [Billboard](https://www.billboard.com/articles/news/6296373/billboard-hot-100-1960) charts, summarizing the top 20 songs on their top 100 charts per decade, from the 60's to the 2000's. The metadata for each track is based off of the dataset created by a company called [The Echo Nest](https://en.wikipedia.org/wiki/The_Echo_Nest), which has released data on over 1 million songs. Echo Nest has since been purchased by Spotify, which made this data available [here](https://developer.spotify.com/console/get-audio-features-track/?id=39ibr95QHNF1YhHV9as24E). 
+In order to correlate the significance of emotions and popular music, I have collected data from the [Billboard](https://www.billboard.com/articles/news/6296373/billboard-hot-100-1960) charts, summarizing the top 20 songs per decade, from the 60's to the 2000's. The metadata for each track is based off of the dataset created by a company called [The Echo Nest](https://en.wikipedia.org/wiki/The_Echo_Nest), which has released data on over 1 million songs. Echo Nest has since been purchased by Spotify, which made this data available [here](https://developer.spotify.com/console/get-audio-features-track/?id=39ibr95QHNF1YhHV9as24E). 
 
 
 ## How Does Music Influences Our Emotions?
 
 
-We know we feel things when we listen to music. Something about the lyrics, melody and rhythim that takes us places we don't choose to go. What exactly are these things? Can they be manipulated by artists at will so to give listeners a crafted response? Frontiers in Psychology released a [study](https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00487/full#h8) in 2013 that aimed to test just that.
+We know we feel things when we listen to music. Something about the sound that takes us places we don't choose to go. As Plato put it:
 
-> The aim of this study is to manipulate musical cues systematically to determine the aspects of music that contribute to emotional expression.
+> "Music and rhythm find their way into the secret places of the soul"
 
-This study, performed by the Department of Music, University of Jyväskylä, Finland and the Department of Speech, Music, and Hearing, KTH - Royal Institute of Technology, Stockholm, Sweden, took 46 participants with musical background and exposed them to 200 audio stimuli. Listeners rated the 200 musical examples according to four perceived emotional characters (happy, sad, peaceful, and scary). Each audio example had 6 cues, such as tempo and time signature. \
-Since each emotion is influenced by many factors, I decided to use the 'Mode' cue and the 'happy' and 'sad' parameters to illustrate the relationship of the cues and emotions.
+How can songwriters do that? Can this data be manipulated by artists at will so to give listeners a crafted response? 
+
+The aim of mentioned study "Emotional expression in music: contribution, linearity, and additivity of primary musical cues" was:
+
+> To manipulate musical cues systematically to determine the aspects of music that contribute to emotional expression.
+
+Their data gives insight on what can be manipulated to give a percieved notion of "happyness", "sadness", "scare" or "peacefulness". Since each emotion is influenced by many factors simultaneously, I chose to exemplify the findings of the study by using the relationship of "happy" and "sad" emotions with the "Mode" cue. 
 
 > In the theory of Western music, a mode is a type of musical scale coupled with a set of characteristic melodic behaviors.
 
+Think of these scales as the road map to every note used in a song.
+
 ## Reference:
+
+### Major Key (Mode 1)
 #### ***Hey Jude - The Beatles***
 
 Name     | Artist      |   Decade |   Rank |   danceability |   energy |   key |   loudness |   speechiness |   acousticness |   instrumentalness |   liveness |   valence |   tempo |   duration_ms |   time_signature | Country   | City  
@@ -49,6 +72,8 @@ Hey Jude | The Beatles |       60 |      2 |          0.462 |    0.632 |     5 |
 
 [![Hey Jude](images/heyjude.jpg)](https://www.youtube.com/watch?v=mQER0A0ej0M)
 
+
+### Minor Key (Mode 2)
 #### ***Hello - Adele***
 
 Name   |   Album | Artist   |   Danceability |   Duration |   Energy | Explicit   |   Instrumentalness |   Liveness |   Loudness |   Mode |   Acousticness |   Popularity |   Speechiness |   Tempo |   TimeSignature |   Valence 
@@ -94,21 +119,25 @@ The Echo Nest developed a system to cathegorize over a million popular songs. Th
 
 The [Billboard Charts](https://www.billboard.com/charts) have always been a good measure of success. I have analysed the acoustic data for the Top 20 songs of each decade, from the 60's to the 2000's, and compared the average value of each of their parameters, as well as their distribution using box charts. Here we can see if there is a lot of change between decades, or no change at all. 
 
+name               | artist          |   decade |   rank |   key |   tempo |   duration_m |   danceability |   energy |   loudness |   speechiness |   acousticness |   instrumentalness |   valence |   time_signature 
+---:|:-------------------|:----------------|---------:|-------:|------:|--------:|-------------:|---------------:|---------:|-----------:|--------------:|---------------:|-------------------:|----------:
+ We Belong Together | Mariah Carey    |     2000 |      1 |     0 | 139.975 |         3.36 |          0.838 |    0.469 |     -7.992 |        0.0835 |        0.0358  |           0        |     0.778 |                4 |\n| 80 | \
+Yeah!              | Usher           |     2000 |      2 |     2 | 105.018 |         4.17 |          0.894 |    0.791 |     -4.699 |        0.112  |        0.0183  |           0        |     0.583 |                4 |\n| 81 \
+ Low                | Flo Rida        |     2000 |      3 |    10 | 128.008 |         3.86 |          0.918 |    0.609 |     -5.64  |        0.0791 |        0.0928  |           0        |     0.304 |                4 |\n| 82 \
+  I Gotta Feeling    | Black Eyed Peas |     2000 |      4 |     0 | 127.965 |         4.82 |          0.741 |    0.748 |     -6.299 |        0.0264 |        0.0823  |           0        |     0.6   |                4 |\n| 83 \
+   How You Remind Me  | Nickelback      |     2000 |      5 |    10 | 172.011 |         3.74 |          0.432 |    0.795 |     -4.023 |        0.0321 |        0.00128 |           0        |     0.519 |                4 |\n| 84 \
+No One             | Alicia Keys     |     2000 |      6 |     1 |  90.042 |         4.23 |          0.644 |    0.548 |     -5.416 |        0.0286 |        0.0209  |           8.68e-06 |     0.166 |                4 |'
+<br>
+
+
 ![Decade_comp](images/all_decade_comp.png)
 ====
 For a songwriter, this is interesting to observe. Take the Speechiness distribution: The songs in the 2000's have more words than in the previous decades. That can be attributed to a higher popularity of rap, R&B and hip hop genres, as well as different recording trends in pop music, such as shorter intros.
 
 The tempo distribution is also quite interesting. It appears that ballads weren't particularly popular in the 80's.
 
-name | artist  |   decade |   rank |   key |   tempo |   duration_m |   danceability |   energy |   loudness |   speechiness |   acousticness |   instrumentalness |   valence |   time_signature |
----:|:----------------------|:---------------------------|---------:|-------:|------:|--------:|-------------:|---------------:|---------:|-----------:|--------------:|---------------:|-------------------:|----------:|
-Physical| Olivia Newton-John|80 | 1 |     4 | 124.297 | 3.7  | 0.84  | 0.796 | -6.18  |  0.0454 |  0.125  |  8.82e-06 |     0.81  |4 | \
-Bette Davis Eyes      | Kim Carnes                 |       80 |      2 |     5 | 116.624 |         3.8  |          0.675 |    0.649 |    -10.271 |        0.0319 |         0.0204 |           0        |     0.596 |                4 | \
-Endless Love          | Lionel Richie & Diana Ross |       80 |      3 |    10 |  93.511 |         4.43 |          0.437 |    0.338 |    -10.108 |        0.0252 |         0.484  |           0.00042  |     0.215 |                4 | \
-Eye Of the Tiger      | Survivor                   |       80 |      4 |     0 | 108.873 |         4.09 |          0.817 |    0.599 |     -9.249 |        0.0328 |         0.132  |           0.000311 |     0.548 |                4 | \
-| Every Breath You Take | The Police                 |       80 |      5 |     1 | 117.394 |         4.19 |          0.822 |    0.478 |     -8.746 |        0.0343 |         0.559  |           0.0073   |     0.722 
 
-
+## Conclusion
 It is clear that while music taste is still quite subjective, we can see clear trends on the occurance of some features in songs through time. 
 
 Looking at the distribution of the cues per decade, we can see how some features remained popular over the decades, like time signature, while others, not so much, like the speechiness. 
