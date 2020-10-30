@@ -1,5 +1,5 @@
 
-# Understanding Music Data - How to Translate Emotions?
+# Understanding Music Data - How to Translate Emotions
 
 _Capstone I Project_
 
