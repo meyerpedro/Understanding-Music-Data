@@ -28,17 +28,6 @@ Frontiers in Psychology published a study from the Department of Music, Universi
 This study took 46 participants with musical background and exposed them to 200 audio stimuli. Listeners rated the 200 musical examples according to four perceived emotional characters (happy, sad, peaceful, and scary. Each audio example had 6 cues, such as tempo and time signature.
 
 
-
- Nro |   Scary |   Happy |    Sad |   Peaceful |   Register |   Mode |   Tempo |   Soundlevel |   Articulation |   Timbre |   Melody 
- ---:|------:|--------:|--------:|-------:|-----------:|-----------:|-------:|--------:|-------------:|---------------:|---------:
-1 |  1.2889 |  4.4667 | 1.7111 |     3.1333 |  4 |      1 |       4 |            4 |  2 |        2 |        4 
-2 |  1.0667 |  5.4444 | 1.4889 |     4.4889 |  5 |      1 |       4 |            1 |  1 |        2 |        2   
-3 |  2.0222 |  1.4889 | 3.7778 |     2.7111 |  2 |      2 |       5 |            1 |  1 |        2 |        1  
-4 |  2.2889 |  4.1111 | 1.2667 |     1.4889 |  1 |      1 |       5 |            4 |  4 |        1 |        2  
-5 |  1.4    |  1.4667 | 5.0444 |     3.8444 |  3 |      2 |       1 |            3 |  2 |        2 |        1  
-
-
-
 In order to correlate the significance of emotions and popular music, I have collected data from the [Billboard](https://www.billboard.com/articles/news/6296373/billboard-hot-100-1960) charts, summarizing the top 20 songs per decade, from the 60's to the 2000's. The metadata for each track is based off of the dataset created by a company called [The Echo Nest](https://en.wikipedia.org/wiki/The_Echo_Nest), which has released data on over 1 million songs. Echo Nest has since been purchased by Spotify, which made this data available [here](https://developer.spotify.com/console/get-audio-features-track/?id=39ibr95QHNF1YhHV9as24E). 
 
 
@@ -51,7 +40,16 @@ We know we feel things when we listen to music. Something about the sound that t
 
 How can songwriters do that? Can this data be manipulated by artists at will so to give listeners a crafted response? 
 
-The aim of mentioned study "Emotional expression in music: contribution, linearity, and additivity of primary musical cues" was:
+
+ Nro |   Scary |   Happy |    Sad |   Peaceful |   Register |   Mode |   Tempo |   Soundlevel |   Articulation |   Timbre |   Melody 
+ ---:|------:|--------:|--------:|-------:|-----------:|-----------:|-------:|--------:|-------------:|---------------:|---------:
+1 |  1.2889 |  4.4667 | 1.7111 |     3.1333 |  4 |      1 |       4 |            4 |  2 |        2 |        4 
+2 |  1.0667 |  5.4444 | 1.4889 |     4.4889 |  5 |      1 |       4 |            1 |  1 |        2 |        2   
+3 |  2.0222 |  1.4889 | 3.7778 |     2.7111 |  2 |      2 |       5 |            1 |  1 |        2 |        1  
+4 |  2.2889 |  4.1111 | 1.2667 |     1.4889 |  1 |      1 |       5 |            4 |  4 |        1 |        2  
+5 |  1.4    |  1.4667 | 5.0444 |     3.8444 |  3 |      2 |       1 |            3 |  2 |        2 |        1  
+<br>
+The aim of mentioned study, titled "Emotional expression in music: contribution, linearity, and additivity of primary musical cues" was:
 
 > To manipulate musical cues systematically to determine the aspects of music that contribute to emotional expression.
 
