@@ -9,15 +9,14 @@ import numpy as np # linear algebra
 import os # accessing directory structure
 
 #data
-emotions = pd.read_csv('data/dataverse_files/mean_emotion_ratings.csv')
-emotions_meta = pd.read_csv('data/dataverse_files/design_matrix.csv')
-atributes_song = pd.read_csv('data/BillboardFromLast20/songAttributes_1999-2019.csv')
-artist = pd.read_csv('data/BillboardFromLast20/artistDf.csv')
-top20 = pd.read_csv('data/Top20AllDecades.csv')
+emotions = pd.read_csv('../data/dataverse_files/mean_emotion_ratings.csv')
+emotions_meta = pd.read_csv('../data/dataverse_files/design_matrix.csv')
+atributes_song = pd.read_csv('../data/BillboardFromLast20/songAttributes_1999-2019.csv')
+artist = pd.read_csv('../data/BillboardFromLast20/artistDf.csv')
+top20 = pd.read_csv('../data/Top20AllDecades.csv')
 #merging emotions dataset with acoustic cues dataset
 
 emo_cue = pd.merge(emotions, emotions_meta, on = 'Nro')
-c = emo_cue.head(6)
 
 #clean up column names. All lower case.
 emo_cue.rename(columns={'Soundlevel':'dynamics'}, inplace = True)
@@ -847,4 +846,4 @@ plt.tight_layout()
 
 
 
-
+print(top20_80)
